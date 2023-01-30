@@ -1,6 +1,5 @@
 package eu.vrgit.arbminer.model
 
-import zio.Ref
 
 
 trait Exchange{
