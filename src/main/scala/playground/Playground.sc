@@ -1,10 +1,14 @@
-import eu.vrgit.arbminer.model._
+import eu.vrgit.arbminer.common.model
+import eu.vrgit.arbminer.common.model.Symbol
+import eu.vrgit.arbminer.common.model.{Base, Quote}
 
-val symbol:Symbol = Symbol(Base("USDT"),Quote("BTC"))
-symbol.base
-symbol.getSymbol
-val peti = symbol.isFiatLinked
+val symbol = Symbol(Coin("USDT"), Coin("BTC"))
+val symbol2 = Symbol(Coin("USDT"), Coin("BTC"))
 
-symbol.getFiatLinkedCoin.get
+val opt = symbol.getFiatLinkedCoin
+//opt.fold(None)(symbol.getOtherCoin(_))
+symbol.getNonFiatLinkedCoin
 
+
+1+1+2
 

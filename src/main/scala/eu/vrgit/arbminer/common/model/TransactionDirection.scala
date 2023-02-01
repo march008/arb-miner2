@@ -1,4 +1,4 @@
-package eu.vrgit.arbminer.model
+package eu.vrgit.arbminer.common.model
 
 enum TransactionDirection {
   case B2Q

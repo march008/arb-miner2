@@ -1,6 +1,4 @@
-package eu.vrgit.arbminer.model
-
-
+package eu.vrgit.arbminer.common.model
 
 trait Exchange{
 //  def updateAvailablePairs:Seq[CoinPair]
